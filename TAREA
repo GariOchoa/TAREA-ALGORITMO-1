@@ -1,0 +1,1040 @@
+Algoritmo ejercicios_video_1
+	//ejercio 1
+	Definir color Como Caracter//defino mi variable
+	color <- "verde";
+	Escribir color;
+	
+	//ejercicio 2
+	Definir edad Como Entero;
+	edad<-55;
+	Escribir edad;
+	
+	//ejercicio 3
+	Definir activo Como Logico;
+	activo<-Verdadero;
+	Escribir activo;
+	
+	//ejercicio 4
+	Definir edad1 Como Entero;
+	Escribir "Que edad tienes?"
+	Leer edad1;
+	Escribir edad1," años";
+	
+	
+	// Ejercicios video 2 operadores algebraicos
+	//ejercicio 1
+	Definir nombre Como Caracter;
+	nombre<-"Ignacio";
+	Escribir nombre;
+	nombre<-"Victor";
+	Escribir nombre;
+	
+	//ejercicio 2
+	definir num1, num2, resultado Como Entero;
+	Escribir "Ingresa numero 1";
+	leer num1;
+	Escribir "Ingresa numero 2";
+	leer num2;
+	resultado<- num1+num2;
+	Escribir "El resultado es ", resultado;
+	
+	//ejercicios video 3
+	// condicional
+	Definir edad2 Como Entero;
+	edad2<-19;
+	Si edad2 > 18 Entonces
+		Escribir "Eres mayor de edad";
+	SiNo
+		Escribir "Eres menor de edad";
+	Fin Si
+	
+	//ejercicios video 4
+	//operador logico
+	sed<-"si";
+	dinero<-"si";
+	
+	si sed="si" y dinero="si" Entonces
+		Escribir"Compra una botella de agua";
+	SiNo
+		si sed="no" y dinero="si" Entonces
+			Escribir "Compra un chocolate";
+		SiNo
+			Escribir "No tienes dinero, ve para la casa...";
+		FinSi
+	FinSi
+	
+	//ejercicios video 5
+	// ciclo Mientras 
+	Definir numAleatorio como entero;
+	numAleatorio<-Aleatorio(0,10);
+	
+	Definir numUsuario Como Entero;
+
+	intentos<-3;
+	
+	Mientras intentos>0 Hacer
+		Escribir "Ingresa un numero de 0 a 10";
+		leer numUsuario;
+		Si numAleatorio=numUsuario Entonces
+			Escribir "Guau eres genial, es correcto! el numero es:", numAleatorio;
+			intentos<-0;
+		SiNo
+			intentos<-intentos-1
+			Escribir "Perdedor, te quedan ", intentos, " intentos";
+			
+		Fin Si
+		
+	Fin Mientras
+	si intentos=0 Entonces
+		Escribir "Ya no te quedan intentos, perdiste!";
+	SiNo
+		Escribir"Ganaste;";
+	FinSi
+	
+	
+	//ejercicios video 6
+	//condicional segun 
+	Escribir "Que combo desea?";
+	Escribir "1: combo 1";
+	Escribir "2: combo 2";
+	Escribir "3: combo 3";
+	Definir combo Como Entero;
+	leer combo;
+	
+	Segun combo Hacer
+		1:
+			Escribir" El valor es de $5000";
+		2:
+			Escribir "El valor es de $2,500";
+		3:
+			Escribir "El valor es de $1000";
+		De Otro Modo:
+			Escribir "No tenemos lo que buscas";
+	Fin Segun
+	
+	//ejercicios video 7
+	//Repetir
+	Definir num Como Entero;
+	definir respuesta Como Caracter;
+	
+	Repetir
+		num<- Aleatorio(0,10);
+		Escribir "El numero aleatorio es: ",num ;
+		Escribir"deseas otro numero?";
+		leer respuesta;
+	Hasta Que respuesta="no"
+	
+	//ejercicos video 8
+	//Funcion 
+	Funcion  sumar ( dato1,dato2 )
+		Escribir "El resultado es:", dato1+dato2;
+		
+	Fin Funcion
+	
+	//Algoritmo 
+		leer dato1;
+		leer dato2;
+		sumar(dato1,dato2);
+		//FinAlgoritmo
+		
+		
+
+		//ejercicio video9
+		//arreglos
+		Dimension personas(3);
+		personas(1)<-"Ignacio";
+		personas(2)<-"Victor";
+		personas(3)<-"Juanito";
+		
+		Para i<-1 Hasta 3 Con Paso 1 Hacer
+			Escribir "El nombre de mi arreglo: ",personas(i);
+		Fin Para
+
+FinAlgoritmo
+
+
+Algoritmo ejercicios_diapositivas
+	//Ejercicios de expresiones matematicas
+	//ejercicio 1
+	definir a,b,c Como Entero;
+	a<-3;
+	b<-7;
+	c=2*a+b-a mod 3
+	Escribir "El resultado es: ",c;
+	//ejercicio 2
+	Definir a,b,z Como Entero;
+	a<-10;
+	b<-4;
+	z= a*b+(3 mod a+b)
+	Escribir "El resultado es: ",z;
+	//ejercicios 3
+	Definir a,b,w Como Entero;
+	a<-6;
+	b<-2;
+	w=a-b+2* (a mod b);
+	Escribir "El resultado es: ",w;
+	//ejercicio 4
+	Definir a,b,v Como Entero;
+	a<-8;
+	b<-5;
+	v=2*b+(a/2)+4*(b mod a);
+	Escribir "El resultado es: ",v;
+	//ejercicio 5
+	Definir a,b,u Como Entero;
+	a<-12;
+	b<-9;
+	u=b-a+(3*(a mod b))
+	Escribir "El resultado es: ",u;
+	//ejercicio 6
+	Definir a Como logico
+	a=(5+3*2)+9>3*5*14%3;
+	Escribir a;
+	//ejercicio 7
+	definir a Como Entero;
+	a=2 *(4 - 10 + 8)/2* 36 *(1/2);
+	Escribir "El resultado es: ", a;
+	//ejercicio 8
+	Definir a Como Real;
+	a= 260 / 12 +(54 % 3) - (85 % 7);
+	Escribir "El resultado es: ",a;
+	//ejercicio 9
+	definir a Como Logico;
+	a=48 < (2 * 3) |  (2 * 7) < 12
+	Escribir a;
+	//ejercicio 10
+	Definir a Como Logico;
+	a= (8 > 2)  | (932 < 23)  & 4 == 2;
+	Escribir a;
+	
+	//Ajercicios algoritmos secuenciales(paso a paso)
+	//ejercicio 11
+	Definir a, b, suma Como Entero;
+	Escribir "Ingrese el primer valor ";
+	leer a;
+	Escribir "Ingrese el sugundo valor";
+	leer b;
+	suma=a+b;
+	Escribir "El resultado de la suma es: ",suma;
+	//ejercicio 12
+	definir b, h, a Como Entero;
+	Escribir "Ingrese la base del triangulo";
+	leer b;
+	Escribir "Ingrese la altura del triangulo";
+	leer h;
+	a=(b*h)/2;
+	Escribir "El area del triangulo es: ",a;
+	//ejercicio 13
+	definir num Como Entero;
+	Escribir "Ingrese un numero";
+	leer num;
+	
+	si num mod 2=0
+		Escribir num, " Es par";
+	sino 
+		Escribir num, " Es impar";
+	FinSi
+	//ejercicio 14
+	Definir n1,n2,opc,res Como Entero;
+	Escribir "Ingrese el primer numero";
+	leer n1;
+	Escribir "Ingrese el segundo numero";
+	leer n2;
+	Escribir "Ingrese una opcion";
+	Escribir "1.Sumar";
+	Escribir "2. Restar";
+	Escribir "3. Multiplicar";
+	Escribir "4.Dividir";
+	leer opc;
+	
+	Segun opc Hacer
+		1:
+			res=n1+n2;
+		2:
+			res=n1-n2;
+		3:
+			res=n1*n2;
+			
+		4:
+			res=n1/n2
+		De Otro Modo:
+			Escribir "Opcion invalida";
+	Fin Segun
+	Escribir res;
+	//ejercicio 15
+	Definir num Como Entero;
+	Escribir "Ingrese un numero ";
+	leer num;
+	Para x<-1 Hasta 10 Con Paso 1 Hacer
+		Escribir x "x" num "=" x*num
+	Fin Para
+	
+	//ejercicio 16
+	Definir cadena1,cadena2,cadena3  Como Caracter;
+	leer cadena1, cadena2;
+	cadena3<-Concatenar(cadena1, cadena2);
+	Escribir cadena3;
+	
+	//ejercicios algoritmos selectivos (con condiciones)
+	// ejercicio 17
+	Definir n1,n2,n3 Como entero;
+	Escribir "Ingrese el primer numero";
+	leer n1;
+	Escribir "Ingrese el segundo numero";
+	leer n2;
+	Escribir "Ingrese el tercer numero";
+	leer n3;
+	si n1>n2 y n2>n3 Entonces
+		Escribir "El numero mayor es ",n1;
+	sino 
+		si n2>n1 y n2>n3 Entonces
+			Escribir "El numero mayor es ",n2;
+		sino 
+			Escribir "El numero mayor es ",n3;
+		FinSi
+		
+	FinSi
+	
+	
+	//ejercicio 18
+	definir edad Como Entero;
+	Escribir "Ingrese su edad";
+	leer edad ;
+	si edad >= 18 Entonces
+		Escribir "Si puede votar";
+	Sino 
+		Escribir "No tiene edad suficiente para votar";
+	FinSi
+	
+	//ejercicio 19
+	definir peso, altura, bmi Como Real;
+	Escribir "Ingrese su peso en kg";
+	leer peso;
+	Escribir "Ingrese su altura en m";
+	leer altura;
+	bmi=peso/(altura*altura)
+	Escribir"Su bmi es: ",bmi;
+	Si bmi<18.5 Entonces
+		Escribir "Usted se encuentra bajo peso";
+	SiNo
+		si bmi >=18.5 y bmi<25 Entonces
+			Escribir "Usted se encuentra en su peso normal";
+		sino 
+			si bmi>= 25 y bmi<30 Entonces
+				Escribir "Ustdes se encuentra en sobre peso";
+			SiNo
+				si bmi>=30 Entonces
+					Escribir "Usted se encuentra con obesidad";
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	
+	//ejercicio 20
+	definir num Como Entero;
+	Escribir"Ingrese un numero";
+	Leer num;
+	Si num >0 Entonces
+		Escribir "El numero es positivo";
+	SiNo
+		si num<0 Entonces
+			Escribir "El numero es negativo";
+		sino 
+			Escribir "El numero es cero";
+		FinSi
+	FinSi
+	
+	
+	//ejercicio 21
+	Definir año Como Entero;
+	escribir "Ingrese el año";
+	leer añoñ
+	si año %4=0 y año %100<>0 o año %400=0 Entonces
+		Escribir "El año es bisiesto";
+	SiNo
+		Escribir "El año no es bisiesto";
+	FinSi
+	
+	//ejercicio 22
+	Definir dia,mes,c Como Entero
+	Definir signo Como Caracter
+	Escribir "Ingresa tu mes de nacimiento"
+	leer mes
+	Escribir "Ingresa el dia de nacimiento"
+	leer dia
+	c=0
+	si (mes=12 y (dia>=22 y dia <=31))o (mes=1 y dia<=20) Entonces
+		signo="Capricornio"
+		c=1
+	FinSi
+	si(mes=1 y (dia>=21 y dia<=31))o(mes=2 y dia<=19) Entonces
+		signo="Acuario"
+		c=1
+	FinSi
+	si (mes=2 y (dia>=20 y dia <=29)) o (mes=3 y dia <=20) Entonces
+		signo="Piscis"
+		c=1
+	FinSi
+	si (mes=3 y (dia >= 21 y dia<=31)) o (mes=4 y dia<=20) Entonces
+		signo="Aries"
+		c=1
+	FinSi
+	Si (mes=4 y (dia>=21 y dia<=30))o (mes=5 y dia <=20)
+		signo="Tauro"
+		c=1
+	FinSi
+	si (mes=5 y (dia>=19 y dia<=31))o(mes=6 y dia <=21) Entonces
+		signo="Geminis"
+		c=1
+	FinSi
+	si (mes=6 y (dia>=22 y dia <= 30))o(mes=7 y dia <=22) Entonces
+		signo="Cancer"
+		c=1
+	FinSi
+	si (mes=7 y (dia>=23 y dia <=31))o(mes=8 y dia <=22) Entonces
+		signo="Leo"
+		c=1
+	FinSi
+	si  (mes=8 y (dia>=23 y dia <=31))o(mes=9 y dia<=22) Entonces
+		signo="Virgo"
+		c=1
+	FinSi
+	si(mes=9 y (dia>=23 y dia<=30))o(mes=10 y dia<=22) Entonces
+		signo="Libra"
+		c=1
+	FinSi
+	si (mes=10 y (dia>=23 y dia <=31))o(mes=11 y dia <=22)Entonces
+		signo="Escorpion"
+		c=1
+	FinSi
+	si (mes=11 y (dia>=23 y dia <=30))o(mes=12 y dia<=21)Entonces
+		signo="Sagitario"
+		c=1
+	FinSi
+	si c=1 Entonces
+		Escribir "Tu signo del zodiaco es: ",signo
+	SiNo
+		Escribir"No existe zigno zociacal para esa fecha"
+		
+	FinSi
+	
+	//ejercicio 23
+	Definir dia Como Entero
+	Escribir "Ingrese dia"
+	leer dia
+	si dia>=1 y dia <=15 Entonces
+		Escribir "El dia pertenece a la primera quincean del mes"
+	SiNo
+		si dia >=16 y dia <= 31 Entonces
+			Escribir "El dia pertenece a la segunda quincena del mes"
+		FinSi
+	FinSi
+	
+	//ejercicio 24
+	Definir dia Como Entero
+	Escribir "Ingrese un numero que corresponda a un dia de la semana"
+	leer dia
+	Segun dia Hacer
+		1:
+			Escribir "Domingo"
+		2:
+			Escribir "Lunes"
+		3:
+			Escribir "Martes"
+		4:
+			Escribir "Miercoles"
+		5:
+			Escribir "Jueves"
+		6:
+			Escribir "Viernes"
+		7:
+			Escribir "Sabado"
+		De Otro Modo:
+			Escribir "No existe ese dia"
+	Fin Segun
+	
+	//ejercicio 25
+	definir frase1, frase2 Como Caracter
+	Escribir "Escriba una frase"
+	leer frase1
+	Escribir "Escriba otra frase"
+	leer frase2
+	si frase1=frase2 Entonces
+		Escribir "Ambas frases son iguales"
+	SiNo
+		Escribir "Las frases no coinciden"
+	FinSi
+	
+	//ejercicio 26
+	definir precio,porc Como Entero
+	Definir desc,pf Como Real
+	escribir "Ingrese el precio del producto"
+	leer precio
+	Escribir "Ingrese porcentaje de descuento"
+	leer porc
+	desc=(precio*porc)/100
+	Escribir "Su descuento es: ",desc
+	pf=precio-desc
+	Escribir "Valor a pagar: ",pf
+	
+	
+	// ejercicio 27
+	definir fact,porc Como Entero
+	Definir imp,total Como Real
+	escribir "Ingrese valor de factura"
+	leer fact
+	Escribir "Ingrese porcentaje de impuesto"
+	leer porc
+	imp=(fact*porc)/100
+	Escribir "valor de impuestp es: ",imp
+	total=fact+imp
+	Escribir "Valor a pagar: ",total
+	
+	//ejercicio 28
+	definir sueldoi,porc Como Entero
+	Definir aum,sueldof Como Real
+	escribir "Ingrese su sueldo"
+	leer sueldoi
+	Escribir "Ingrese porcentaje de aumento"
+	leer porc
+	aum=(sueldoi*porc)/100
+	Escribir "valor de impuestp es: ",aum
+	sueldof=sueldoi+aum
+	Escribir "Su sueldo con aumento es de: ",sueldof
+	
+	//ejercicio 29
+	definir n,cantidad Como Entero
+	definir total,precio,vf Como Real
+	Escribir "Ingrese cantidad de productos "
+	leer n
+	total=0
+	Para i<-1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingrese la cantidad del producto ",i
+		leer cantidad
+		Escribir "Ingrese el precio del producto",i
+		leer precio
+		total=total+(cantidad*precio)
+	Fin Para
+	Escribir"El precio total de la compra es: ",total
+	si total>100 Entonces
+		vf=total-(total*0.1)
+		Escribir "Valor a pagar: ",vf
+	FinSi
+	
+	//ejercicio 30
+	definir ing Como Entero
+	definir rent Como Real
+	Escribir "Ingrese su salario anual"
+	leer ing
+	Si ing>10000 y ing<=20000 Entonces
+		rent=(ing*5)/100
+		Escribir "Impuestos a pagar: ",rent
+	FinSi
+	si ing>20000 Entonces
+		rent=(ing*15)/100
+		Escribir "Impuestos a pagar: ",rent
+	FinSi
+	
+	//ejercicio 33
+	definir bono,sf Como Real
+	Escribir "Ingrese los años de trabajo"
+	leer años
+	Escribir "Ingrese su salario"
+	leer salario
+	si años>5 Entonces
+		bono=(salario*5)/100
+		Escribir "Su bono sera de: ", bono
+		sf =salario+bono
+		Escribir "Su salario sera de: ",sf
+	SiNo
+		Escribir "Debe de tener mas de 5 años trabajando "
+	FinSi
+	
+	//ejercicio 34
+	definir km Como Entero
+	Escribir "Ingrese la distancia del envio en km"
+	leer km
+	si km<50 Entonces
+		Escribir "El costo de envio es de: 10$"
+	FinSi
+	si km>50 Entonces
+		Escribir "El costo de envio es de: 20$"
+	FinSi
+	
+	//ejercicio 35
+	Definir c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,suma,desc Como Real
+	escribir "Ingrese el valor de la compra 1"
+	leer c1
+	escribir "Ingrese el valor de la compra 2"
+	leer c2
+	escribir "Ingrese el valor de la compra 3"
+	leer c3
+	escribir "Ingrese el valor de la compra 4"
+	leer c4
+	escribir "Ingrese el valor de la compra 5"
+	leer c5
+	escribir "Ingrese el valor de la compra 6"
+	leer c6
+	escribir "Ingrese el valor de la compra 7"
+	leer c7
+	escribir "Ingrese el valor de la compra 8"
+	leer c8
+	escribir "Ingrese el valor de la compra 9"
+	leer c9
+	escribir "Ingrese el valor de la compra 10"
+	leer c10
+	escribir "Ingrese el valor de la compra 11"
+	leer c11
+	escribir "Ingrese el valor de la compra 12"
+	leer c12
+	suma=(c1+c2+c3+c4+c5+c6+c7+c8+c9+c10+c11+c12)
+	Escribir "Su total de compras anuales es de: ",suma
+	si suma>500 Entonces
+		
+		Escribir "Ingrese siguiente compra"
+		leer c13
+		desc=(c13*10)/100
+		Escribir  "Su descuento es de: ", desc
+	sino 
+		Escribir "Sus compras no superan los 500$"
+	FinSi
+	
+	//ejercicio 36
+	definir cantidad Como Entero
+	definir precio,pf,desc,total Como Real
+	Escribir "Ingrese la cantidad de unidades del producto"
+	leer cantidad 
+	Escribir "Ingrese el precio por unidad"
+	leer precio
+	total=cantidad*precio
+	si cantidad>=10 y cantidad<=50 Entonces
+		desc=(total*5)/100
+		pf=total-desc
+		Escribir "El valor de la compra es: ",pf
+	FinSi
+	si cantidad>=51 y cantidad<=100 Entonces
+		desc=(total*10)/100
+		pf=total-desc
+		Escribir"El valor de la compra es: ",pf
+	FinSi
+	si cantidad>100  Entonces
+		desc=(total*15)/100
+		pf=total-desc
+		Escribir "El valor de la compra es: ",pf
+	FinSi
+	
+	//ejercicio 40
+	definir horas como entero 
+	definir total,desc,vs,precio como real
+	precio=2.88
+	Escribir "Ingrese las horas necesarias"
+	leer horas
+	total=precio*horas
+	si horas>10 Entonces
+		desc=(total*20)/100
+		Escribir "Su descuento es: ",desc
+		vs=total-desc
+		Escribir "El valor del servicio es: ", vs
+	SiNo
+		Escribir"El valor del servicio es: ",total
+	FinSi
+	
+	//ejercicio 41
+	definir suma_pares,suma_impares,i como enteros
+	suma_pares <- 0
+	suma_impares <- 0
+	Para i<-2 Hasta 49 Hacer
+		Si i mod 2=0 Entonces
+			suma_pares <- suma_pares+i
+		SiNo
+			suma_impares <- suma_impares +i
+		FinSi
+	FinPara
+	Escribir "La suma de pares es: ",suma_pares
+	Escribir "La suma de impares es: ",suma_impares
+	
+	//ejercicio 42
+	Definir num Como Entero;
+	Escribir "Ingrese un numero ";
+	leer num;
+	Para x<-1 Hasta 12 Con Paso 1 Hacer
+		Escribir x "x" num "=" x*num
+	Fin Para
+	//ejercicio 43
+	definir palabra Como Caracter
+	definir n,x,c Como Entero
+	Escribir "Ingrese una palabra"
+	leer palabra
+	n=longitud(palabra)
+	x=1
+	c=0
+	Mientras x<=n Hacer
+		Segun subcadena(palabra,x,x) hacer 
+			"a"o "A":
+				c= c+1
+			"e" o "E":
+				c=c+1
+			"i" o "I":
+				c=c+1
+			"o" o "O":
+				c=c+1
+			"u" o "U":
+				c=c+1
+				
+		FinSegun
+		x=x+1
+	Fin Mientras
+	Escribir "La palabra ",palabra," tiene ",c," vocales"
+	
+	// ejercicio 44
+	definir txt como cadena
+	definir chr Como Caracter
+	definir contador Como Entero
+	contador=0
+	Escribir "Ingrese una frase o palabra"
+	leer txt
+	Para i<-1 Hasta Longitud(txt) Con Paso 1 Hacer
+		chr=subcadena(txt,i,i)
+		si chr<>' ' Entonces
+			contador=contador+1
+		FinSi
+	Fin Para
+	Escribir "Cantidad de letras: ",contador
+	
+	//ejercicio 45
+	Definir numAleatorio como entero;
+	numAleatorio<-Aleatorio(0,10);
+	
+	Definir numUsuario Como Entero;
+	
+	intentos<-3;
+	
+	Mientras intentos>0 Hacer
+		Escribir "Ingresa un numero de 0 a 10";
+		leer numUsuario;
+		Si numAleatorio=numUsuario Entonces
+			Escribir "Guau eres genial, es correcto! el numero es:", numAleatorio;
+			intentos<-0;
+		SiNo
+			intentos<-intentos-1
+			Escribir "Perdedor, te quedan ", intentos, " intentos";
+			
+		Fin Si
+		
+	Fin Mientras
+	si intentos=0 Entonces
+		Escribir "Ya no te quedan intentos, perdiste!";
+	SiNo
+		Escribir"Ganaste;";
+	FinSi
+	
+	
+	//ejercicio 47
+	definir pares,impares Como Entero
+	pares=0
+	impares=0
+	para i=1 hasta 100 Hacer
+		Escribir "#", i
+		si i%2=0 entonces
+			pares=pares+i
+		SiNo
+			impares=impares+i
+		FinSi
+	FinPara
+	Escribir "la suma de los numeros impares es de: ",impares
+	
+	
+	//ejercicio 48
+	definir txt como cadena
+	definir chr Como Caracter
+	definir contador Como Entero
+	contador=0
+	Escribir "Ingrese una frase o palabra"
+	leer txt
+	Para i<-1 Hasta Longitud(txt) Con Paso 1 Hacer
+		chr=subcadena(txt,i,i)
+		si chr<>' ' Entonces
+			contador=contador+1
+		FinSi
+	Fin Para
+	Escribir "Cantidad de letras: ",contador
+	
+	//ejercicio 49
+	definir n1,n2,suma Como Entero
+	Escribir "Ingrese un numero"
+	leer n1
+	Escribir "Ingrese un segundo numero"
+	leer n2
+	si n1>0 y n2>0 Entonces
+		suma=n1+n2
+		Escribir "El resultado de la suma: ",suma
+	sino 
+		Escribir "No se puede realizar la suma"
+	FinSi
+	
+	//ejercicio 50
+	Definir n Como entero
+	Escribir "Ingrese un numero"
+	leer n 
+	Para n<-n Hasta 1 Hacer
+		Escribir n
+	Fin Para
+	
+	//ejercicio 51
+	definir x,suma,vector Como Entero
+	Dimension vector[10]
+	para x=1 hasta 10 con paso 1 Hacer
+		vector[x] = azar (20)
+	FinPara
+	suma=0
+	para x=1 Hasta 10 con paso 1 Hacer
+		suma = suma+vector[x]
+		Escribir vector[x]
+	FinPara
+	Escribir "La suma de los dis numero es: ",suma
+	
+	//ejercicio 52
+	definir n,acum,prom Como Real
+	acum<-0
+	Escribir "Cuantas calificaciones desea almacenar?"
+	leer n
+	Dimension arreglo[n]
+	para i<-1 Hasta n con paso 1 Hacer
+		Escribir "Ingrese una calificacion "
+		leer v
+		arreglo[i]<-v
+	FinPara
+	Para j<-1 Hasta n Con Paso 1 Hacer
+		acum<-acum +arreglo[j]
+	FinPara
+	prom<-acum/n
+	Escribir "El promedio de sus calificaciones es: ",prom
+	
+	// ejercicio 53
+	SubProceso leerArreglo ( arreglo,t )
+		definir i Como Entero
+		Para i<-0 Hasta t-1 Con Paso 1 Hacer
+			Escribir Sin Saltar "Elemento arreglo", i," =";
+			leer arreglo[i];
+		Fin Para
+FinSubProceso
+
+SubProceso mostrarArreglo ( arreglo,t )
+	definir i Como Entero
+	Para i<-0 Hasta t-1 Con Paso 1 Hacer
+		Escribir "Elemento arreglado", i,"=", arreglo(i)
+	Fin Para
+FinSubProceso
+
+Proceso ArreglosUnidimensionales
+	Definir arreglo,t,i Como Entero
+	t<-2
+	Dimension arreglo[t]
+	
+	leerArreglo(arreglo,t)
+	mostrarArreglo(arreglo,t)
+	
+	
+FinProceso
+
+
+//ejercicio 54
+Definir x,n,c,vector Como Entero
+Dimension vector[10]
+para x=1 Hasta 10 Con Paso 1 Hacer
+	Escribir "Ingrese un numero "
+	leer vector(x)
+FinPara
+Escribir "Ingresa el numero que desea buscar"
+leer n
+c=0
+para x=1 Hasta 10 Con Paso 1 Hacer
+	si n =vector(x) Entonces
+		Escribir "El numero ",n," se encuentra en la poasicion ",x
+		c=1
+	FinSi
+FinPara
+si c=0 Entonces
+	Escribir "EL numero ingresado no se encuentra en el vector"
+FinSi
+
+//ejercicio 55
+Definir x,pares,impares,vector Como Entero
+Dimension vector[10]
+para x=1 Hasta 10 Con Paso 1 Hacer
+	Escribir "Ingrese un numero"
+	leer vector(x)
+FinPara
+pares=0
+impares=0
+para x=1 Hasta 10 Con Paso 1 Hacer
+	si vector(x) mod 2=0 Entonces
+		pares=pares+1
+	SiNo
+		impares=impares +1
+	FinSi
+FinPara
+Escribir "Los numeors pares son: ",pares
+Escribir "Los numeros impares son: ",impares
+
+//ejercicio 56
+Definir n,x Como Entero
+Dimension vector[10]
+x=9
+para i=0 Hasta 9 Hacer
+	vector[i]= azar(100)+1
+FinPara
+
+para i=0 Hasta 9 Hacer
+	Escribir vector[i]
+FinPara	
+
+Para i=0 hasta 4 hacer 
+	n= vector[x]
+	vector[x]=vector[i]
+	vector[i]=n
+	x=x-1
+FinPara
+
+Escribir "---------------"
+para i=0 Hasta 9 Hacer
+	Escribir vector[i]
+FinPara	
+
+//ejercicio 58
+funcion mensaje
+	Escribir "Hola, buenas noches"
+FinFuncion
+//Algoritmo sin_titulo
+	mensaje;
+	//FinAlgoritmo
+	
+	//ejercicio 59
+	Funcion resultado<-suma(n1,n2)
+		resultado<-n1+n2
+FinFuncion
+
+//Algoritmo sin_titulo
+Escribir "Ingrese el primer valor"
+leer n1
+Escribir "Ingrese el segundo valor"
+leer n2
+r<-suma (n1,n2)
+Escribir "La suma es", r
+
+Escribir "la suma es", suma(n1,n2)
+//FinAlgoritmo
+
+//ejercicio 60
+
+
+funcion v<-realizarcalculo
+	v=5*5	
+FinFuncion
+
+funcion v<-calculoParametro(a,b)
+	v=a*b	
+FinFuncion
+//Algoritmo sin_titulo
+Definir n,n2 Como Entero
+
+Escribir "Ingresa numero 1"
+leer n
+Escribir "Proporcion 2"
+leer n2
+n=2
+n2=8
+
+Escribir realizarcalculo
+
+Escribir calculoParametro(n,n2)
+//FinAlgoritmo
+
+//ejercicio 62
+Funcion  a<- rectangulo ( b,h ) 
+	a<-(b*h)/2
+FinFuncion
+
+
+//Algoritmo Area_triangulo_funcion
+Escribir "Dame  la base"
+leer b
+Escribir "Dame la altura"
+leer h
+Escribir "El area es ", rectangulo(b,h)
+
+//FinAlgoritmo
+
+//ejercicio 63
+Funcion nombre()
+	Definir nombres como cadena
+	nombres="Gari MAarcelo"
+	Escribir "Bienvenido a la funcion en el cual se muestra mi nombre"
+	Escribir"Nombres: ",nombres	
+FinFuncion
+
+//Algoritmo Funcionsinparametros
+nombre()
+
+//FinAlgoritmo
+
+//ejercicio 64
+funcion c=convertir(f)
+	definir c como real
+	c=(f-32) * 5/9
+FinFuncion
+
+//Algoritmo funcionconvertir
+Definir f Como Real
+Escribir "Ingresa los grados fahrenheit"
+leer f
+Escribir "La conversion a grados celcius es: ",convertir(f)
+//FinAlgoritmo
+
+//ejercicio 65
+funcion veces<- buscarcaracteres ( cadena, letra )
+	Definir cont Como Entero
+	para i<-1 hasta longitud(cadena) con paso 1
+		cont=cont+1
+	FinPara
+	veces=cont
+FinFuncion
+
+funcion separarletras (palabra)
+	Definir size,veces Como Entero
+	size=longitud(palabra)
+	para i<-1 hasta size con paso 1
+		veces=buscarcaracteres (palabra,Subcadena(palabra,i,i))
+		Escribir "La letra ",Subcadena(palabra,i,i)," esta", veces," veces en la palabra", palabra
+	FinPara
+FinFuncion
+
+
+//Algoritmo contarcaractererRepetidos
+Definir cadena Como Caracter
+Escribir "Digite una palabra"
+leer cadena
+separarletras(cadena)
+
+//FinAlgoritmo
+
+//ejercicio 67
+funcion resultado=suma()
+	definir n1,n2,n3,n4 Como Real
+	n1=10.2
+	n2=5.2
+	n3=4.1
+	n4=5.5
+	resultado=(n1+n2+n3+n4)
+FinFuncion
+
+//Algoritmo sumalistanumeros
+Escribir "BIenvenido a la suma con funciones"
+Escribir" el resultado es", suma 
+
+//FinAlgoritmo
+
+	
+FinAlgoritmo
+
+
